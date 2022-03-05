@@ -1,7 +1,9 @@
 import React from 'react';
-import { View, SafeAreaView, Image, Text, StyleSheet } from 'react-native';
+import { View, SafeAreaView, Image, Text } from 'react-native';
 
-import logo from '../../assets/logo.png'
+import styles from './styles';
+import logo from '../../assets/logo.png';
+import { getProducers } from '../../services/data';
 
 export default function Home() {
  return (
@@ -11,27 +13,7 @@ export default function Home() {
       source={logo}/>
     <Text style={styles.title}>Olá, Wellitonnn</Text>
       <Text style={styles.subtitle}>Encontre os melhores produtores</Text>
+    
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-    backgroundStyle: {
-      backgroundColor: '#f6f6f6',
-      padding: 16,
-    },
-    logoImg: {
-      width:70,
-      height: 28,
-    },
-    title: {
-      marginTop: 24,
-      fontSize: 26,
-      lineHeight: 26,
-      fontWeight: 'bold'
-    },
-    subtitle: {
-      fontSize: 16,
-      lineHeight: 26,
-    }
-  });
