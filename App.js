@@ -21,7 +21,7 @@ export default function App () {
           style={styles.logoImg}
           source={logo}/>
         <Text style={styles.title}>Olá, Welliton</Text>
-        <Text>Encontre os melhores produtores</Text>
+          <Text style={styles.subtitle}>Encontre os melhores produtores</Text>
     </SafeAreaView>
   );
 };
@@ -38,6 +38,11 @@ const styles = StyleSheet.create({
   title: {
     marginTop: 24,
     fontSize: 26,
+    lineHeight: 26,
+    fontWeight: 'bold'
+  },
+  subtitle: {
+    fontSize: 16,
     lineHeight: 26,
   }
 });
